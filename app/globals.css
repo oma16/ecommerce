@@ -31,7 +31,7 @@ body {
 }
 .borderNav {
   border-bottom: 1px solid hsl(220, 14%, 75%);
-  padding-bottom: 1rem;
+  padding-bottom: 2.2rem;
 }
 .links {
   padding-left: 25px;
@@ -147,6 +147,10 @@ body {
   }
   .navlinks {
     display: none;
+  }
+  .links{
+    margin-bottom: 20px;
+    font-weight: 700;
   }
   .navCard {
     box-shadow: rgba(0, 0, 0, 0.74) 60vw 0px 4px;
