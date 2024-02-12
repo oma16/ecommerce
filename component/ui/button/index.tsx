@@ -48,21 +48,21 @@ const ButtonAdd = (product :any) => {
   return (
     <div className="btncol mb-10 ">
       <div className="py-2 bg-btn px-1 font-bold text-lg flex justify-between btnMargin items-center rounded-lg">
-        <ButtonUi className=" px-4" onClick={handleMinus}>
+        <ButtonUi className=" btnpad" onClick={handleMinus}>
           <Image src={minus} alt="minus" />
         </ButtonUi>
 
-        <span className="text-black font-bold text-2xl px-4">
+        <span className="text-black font-bold text-2xl btnpad">
           {shoeState}
         </span>
-        <ButtonUi className="px-4" onClick={handleAdd}>
+        <ButtonUi className="btnpad" onClick={handleAdd}>
           <Image src={plus} alt="plus" />
         </ButtonUi>
       </div>
 
       <div className=" btnMargin btnmar">
         <ButtonUi
-          className="w-full bg-brand flex justify-between py-2  items-center rounded-lg "
+          className="  w-full bg-brand flex justify-between py-2  items-center rounded-lg "
           onClick={() => addToCart(product)}
         >
           <Image src={cart} alt="cart" className="text-white cart " />
