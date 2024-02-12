@@ -60,7 +60,7 @@ const ButtonAdd = (product :any) => {
         </ButtonUi>
       </div>
 
-      <div className=" btnMargin ml-3 ">
+      <div className=" btnMargin btnmar">
         <ButtonUi
           className="w-full bg-brand flex justify-between py-2  items-center rounded-lg "
           onClick={() => addToCart(product)}

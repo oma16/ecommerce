@@ -1,6 +1,6 @@
 .bg-brand {
   background-color: hsl(26, 100%, 55%);
-  padding: 0.9rem 4rem;
+  padding: 1rem 3rem;
   color: white;
   text-align: center;
   justify-content: center;
@@ -10,7 +10,7 @@
   /* padding: 0 0.2rem;
   margin-right: 1rem; */
 }
-.btncol{
+.btncol {
   display: flex;
   flex-direction: row;
 }
@@ -24,12 +24,12 @@
   border-radius: 50%;
   position: absolute;
   top: -11px;
-  left: 8px; 
+  left: 8px;
   color: white;
   font-weight: 400;
   font-size: 12px;
 }
-.cartNostate{
+.cartNostate {
   display: none;
 }
 /* .btnAdd {
@@ -39,7 +39,9 @@
 .btnMargin {
   margin-top: 30px;
 }
-
+.btnmar {
+  margin-left: 16px;
+}
 .cart {
   margin-right: 5px;
 }
@@ -49,7 +51,7 @@
   margin: 20px auto;
   width: 80%;
 }
-.shoesmall{
+.shoesmall {
   display: flex;
   justify-content: space-between;
   margin: 20px auto;
@@ -57,24 +59,22 @@
 }
 @media screen and (max-width: 1080px) {
   .bg-brand {
-    padding: 0.5rem 3rem;
+    padding: 1rem 2.5rem;
   }
-  .shoesmall{
-    
+  .shoesmall {
     width: 40%;
   }
- 
+  
 }
 @media screen and (max-width: 780px) {
   .bg-brand {
-    padding: 0.5rem 1.5rem;
+    padding: 1rem 1.0rem;
   }
   .shoeflex {
-   
     width: 100%;
   }
-  .shoesmall{
-    
+ 
+  .shoesmall {
     width: 50%;
   }
 }
@@ -84,12 +84,14 @@
     /* padding: 0.3rem 1rem;
     margin-right: 0; */
   }
-  .btncol{
+  .btnmar {
+    margin-left: 0px;
+  }
+  .btncol {
     display: flex;
     flex-direction: column;
   }
   .shoeflex {
     display: none;
   }
-  
 }
