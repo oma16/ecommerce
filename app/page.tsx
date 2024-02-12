@@ -98,7 +98,7 @@ export default function Home() {
                 </span>
               </p>
               <p className="text-lg text-blue-200 line-through">
-                ${shoeProduct.price}
+                ${shoeProduct.price}.00
               </p>
             </div>
             <ButtonAdd product={shoeProduct} />
