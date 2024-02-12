@@ -1,0 +1,66 @@
+.cartCard {
+  border-radius: 8px;
+  height: 214px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: black;
+  width: 320px;
+  margin: 0 auto;
+  background-color: white;
+  position: absolute;
+  top: 38px;
+  z-index: 1;
+  left: -145px;
+  right: 0;
+}
+.cartTitle{
+  padding: 10px 0 0 15px;
+  font-weight: 700;
+}
+.cardmodal{
+  padding: 0 15px;
+}
+.modalfont{
+  font-size: 16px;
+  font-weight: normal;
+}
+.remove{
+  align-self: center;
+}
+.checkout{
+  margin-top: 20px;
+}
+.cartBody{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 160px;
+}
+.empty{
+  align-self: center;
+  font-weight: 700;
+  color: hsl(219, 9%, 45%);
+}
+
+@media screen and (max-width: 1080px) {
+  .cartCard {
+    width: 340px;
+    left: -251px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .cartCard {
+    width: 340px;
+    left: -273px;
+    top: 61px;
+  }
+}
+@media screen and (max-width: 350px) {
+    .cartCard {
+        width: 270px;
+        left: -197px;
+    }
+    .modalfont{
+      font-size: 12px;
+    }
+}

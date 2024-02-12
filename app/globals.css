@@ -1,0 +1,157 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+/* @import "./base.css"; */
+@import "tailwindcss/utilities";
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  background-color: white;
+  padding-top: 1rem;
+  font-family: "kumbh-sans";
+  padding-bottom: 1rem;
+  box-sizing:border-box;
+}
+.borderNav {
+  border-bottom: 1px solid hsl(220, 14%, 75%);
+  padding-bottom: 1rem;
+}
+.links {
+  padding-left: 25px;
+  color: hsl(219, 9%, 45%);
+}
+.link1 {
+  padding-left: 55px;
+}
+.codecolor{
+  color :hsl(219, 9%, 45%);
+}
+.cartRelative {
+  position: relative;
+}
+.bottomMargin{
+  margin-bottom: 9rem;
+}
+.navWidth {
+  width: 80%;
+  margin: 0 auto;
+}
+.linkmenu:active,
+.linkmenu:focus {
+  text-decoration: underline hsl(26, 100%, 55%) solid 3px;
+  text-underline-offset: 40px;
+}
+
+.smallshoe {
+  background-color: hsl(25, 100%, 94%);
+  border-radius: 8px;
+}
+.smallshoe:hover {
+  background-color: hsl(25, 100%, 94%);
+  opacity: 0.7;
+}
+
+.smallshoe:active,
+.smallshoe:focus
+{
+  background-color: hsl(25, 100%, 94%);
+  opacity: 0.7;
+  border: 2px solid hsl(26, 100%, 55%);
+}
+
+.navlink {
+  display: flex;
+  flex-direction: row;
+  margin-top: 18px;
+}
+.navlinks {
+  display: flex;
+  flex-direction: row;
+}
+.navCard {
+  display: none;
+}
+.navimg {
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 1080px) {
+  .navWidth {
+    width: 90%;
+  }
+
+  .link1 {
+    padding-left: 15px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .navlink {
+    flex-direction: row-reverse;
+    margin-top: 0px;
+  }
+  .linkmenu:active,
+  .linkmenu:focus {
+    text-decoration: none;
+    text-underline-offset: 0;
+  }
+  .logo {
+    margin-left: 15px;
+  }
+  .menu {
+    margin-top: 4px;
+  }
+  .navlinks {
+    display: none;
+  }
+  .links {
+    color: black;
+  }
+  .navCard {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-top: 30px;
+    height: 800px;
+    box-shadow: rgba(0, 0, 0, 0.74) 57vw 0px 4px;
+    width: 57vw;
+    margin: 0 auto;
+    background-color: white;
+    position: absolute;
+    top: -27px;
+    z-index: 1;
+    left: -83px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .navlink {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .navlinks {
+    display: none;
+  }
+  .navCard {
+    box-shadow: rgba(0, 0, 0, 0.74) 60vw 0px 4px;
+    width: 60vw;
+    left: -43px;
+    padding-left: 20px;
+  }
+}

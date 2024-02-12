@@ -1,0 +1,137 @@
+.modalwidth {
+  width: 30%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+}
+.modalrl {
+  position: relative;
+}
+.modalab {
+  width: 30%;
+  margin: 0 auto;
+}
+.modalbigimg {
+  width: 40%;
+  margin: 130px 0px 20px 385px;
+  z-index: 2;
+}
+.arrow {
+  /* /* left: 20rem; */
+  /* right: 28rem; */
+  top: 12rem;
+  z-index: 3;
+  /* margin-left: 40px; */
+}
+.close {
+  position: absolute;
+  left: 870px;
+  top: 75px;
+}
+.carousels {
+  display: inline-flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.carousels::-webkit-scrollbar {
+  display: none;
+}
+.carousel-items {
+  box-sizing: content-box;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  justify-self: center;
+  flex: none;
+  scroll-snap-align: start;
+}
+.carousel-center .carousel-items {
+  scroll-snap-align: center;
+}
+.carousel-end .carousel-items {
+  scroll-snap-align: end;
+}
+.modallink {
+  /* display: flex; */
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: -100px;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* padding-left: x ; */
+}
+.items {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+}
+.modalimg {
+  max-width: 30%;
+}
+
+.click {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.gallery {
+  background: #eee;
+}
+
+.gallery-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8c8;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+@media screen and (max-width: 1040px) {
+  .modalbigimg {
+    width: 40%;
+    margin: 140px 0px 20px 340px;
+    z-index: 2;
+  }
+  .close {
+    position: absolute;
+    left: 710px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .modalbigimg {
+    width: 50%;
+    margin: 120px 0px 20px 200px;
+    z-index: 2;
+  }
+  .close {
+    position: absolute;
+    left: 580px;
+  }
+  .modalab {
+    width: 46%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .modallink {
+    display: none;
+  }
+}
