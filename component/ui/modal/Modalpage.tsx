@@ -62,31 +62,7 @@ const Modalpage = ({ id, handleModalClose }: any) => {
           ))}
         </div>
         <Shoe shoe={product.shoesmall} className=" shoesmall items-center justify-center md:w-full"/>
-        <div className="flex modalab  ">
-          {product.shoesmall.map((shoe) => (
-            <div
-              id={`slide${shoe.id}`}
-              key={shoe.id}
-              className="carousel-item relative"
-            >
-              <a href={`#slide${shoe.id}`} className=" py-2 px-3 rounded-full">
-                {" "}
-                <Image
-                  src={shoe.shoe}
-                  alt="team pic"
-                  width={70}
-                  height={70}
-                  className="rounded-lg ms-3"
-                />
-              </a>
-  
-              {/* <img src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" className="w-full" /> */}
-              <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                
-              </div>
-            </div>
-          ))}
-        </div>
+       
         </div>
       ))}
 
