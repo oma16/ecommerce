@@ -61,6 +61,7 @@ const Modalpage = ({ id, handleModalClose }: any) => {
             </div>
           ))}
         </div>
+        <Shoe shoe={product.shoesmall} className=" shoesmall items-center justify-center md:w-full"/>
         <div className="flex modalab  ">
           {product.shoesmall.map((shoe) => (
             <div

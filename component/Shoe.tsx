@@ -13,12 +13,13 @@ interface Shoe{
 interface Props {
   href?: string;
   shoe: Shoe[],
+  className?:string,
 }
-const Shoe = ({ href,shoe }: Props) => {
+const Shoe = ({ href,shoe, className }: Props) => {
   const router = useRouter();
   const pathname = usePathname();
   return (
-    <div className="shoeflex  items-center justify-center md:w-full">
+    <div className={className}>
       {shoe.map((product) => (
         <div key={product.id} className="smallshoe relative gap-1 rounded-lg"  id={`slide${product.id}`} >
           <a

@@ -45,7 +45,12 @@
   margin: 20px auto;
   width: 80%;
 }
-
+.shoesmall{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  width: 40%;
+}
 @media screen and (max-width: 1080px) {
   .bg-brand {
     padding: 0.5rem 3rem;
@@ -59,6 +64,10 @@
   .shoeflex {
    
     width: 100%;
+  }
+  .shoesmall{
+    
+    width: 50%;
   }
 }
 @media screen and (max-width: 640px) {

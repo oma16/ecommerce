@@ -47,7 +47,7 @@ const ButtonAdd = (product :any) => {
  
   return (
     <div className="flex flex-col md:flex-row mb-10 ">
-      <div className=" md:mr-8 py-2 md:py-0 bg-btn  font-bold text-lg flex justify-between btnMargin items-center rounded-lg">
+      <div className="py-2 bg-btn  font-bold text-lg flex justify-between btnMargin items-center rounded-lg">
         <ButtonUi className=" px-1" onClick={handleMinus}>
           <Image src={minus} alt="minus" />
         </ButtonUi>

@@ -76,7 +76,7 @@ export default function Home() {
                 </div>
               ))}
             </div>
-            <Shoe shoe={shoeProduct.shoesmall} />
+            <Shoe shoe={shoeProduct.shoesmall} className="shoeflex  items-center justify-center md:w-full" />
           </div>
           <div className="lg:w-4/5  md:mt-8 xl:mt-24   px-8 md:px-5 xl:px-10">
             <h3 className="font-bold text-orange-50 text-base uppercase  mb-3">
