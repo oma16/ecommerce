@@ -10,6 +10,10 @@
   /* padding: 0 0.2rem;
   margin-right: 1rem; */
 }
+.btncol{
+  display: flex;
+  flex-direction: row;
+}
 .cartState {
   background-color: hsl(26, 100%, 55%);
   width: 25px;
@@ -79,6 +83,10 @@
     background-color: hsl(223, 64%, 98%);
     /* padding: 0.3rem 1rem;
     margin-right: 0; */
+  }
+  .btncol{
+    display: flex;
+    flex-direction: column;
   }
   .shoeflex {
     display: none;
