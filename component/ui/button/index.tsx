@@ -48,25 +48,25 @@ const ButtonAdd = (product :any) => {
   return (
     <div className="flex flex-col md:flex-row mb-10 ">
       <div className=" md:mr-8 py-2 md:py-0 bg-btn  font-bold text-lg flex justify-between btnMargin items-center rounded-lg">
-        <ButtonUi className=" px-2" onClick={handleMinus}>
+        <ButtonUi className=" px-1" onClick={handleMinus}>
           <Image src={minus} alt="minus" />
         </ButtonUi>
 
-        <span className="text-black font-bold text-2xl px-4">
+        <span className="text-black font-bold text-2xl px-1">
           {shoeState}
         </span>
-        <ButtonUi className="px-2" onClick={handleAdd}>
+        <ButtonUi className="px-1" onClick={handleAdd}>
           <Image src={plus} alt="plus" />
         </ButtonUi>
       </div>
 
-      <div className=" w-3/4 btnMargin ">
+      <div className=" btnMargin ">
         <ButtonUi
           className="w-full bg-brand flex justify-between  items-center rounded-lg "
           onClick={() => addToCart(product)}
         >
           <Image src={cart} alt="cart" className="text-white cart " />
-          <span className="text-base pl-3 text-white ms-4">Add to cart </span>
+          <span className="text-base pl-3 text-white ms-1">Add to cart </span>
         </ButtonUi>
       </div>
     </div>
